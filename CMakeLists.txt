@@ -16,6 +16,7 @@ include_directories(
 )
 
 add_library(${LIB_NAME} STATIC ${SRCS})
+target_link_libraries(${LIB_NAME} pthread)
 
 add_subdirectory(test)
 
